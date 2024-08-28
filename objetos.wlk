@@ -39,5 +39,30 @@ object placa {
 }
 object arito {
   var peso = 180
+  method peso() = peso
+  method color() = celeste
   method material() = cobre
+}
+object banquito {
+  var color = naranja
+  var peso = 1700
+  method peso() = peso
+  method color() = color
+  method color(unColor){
+    color = unColor
+  }
+}
+object cajita {
+  var tieneObjeto = pelota
+  var peso = 400
+  method material() = cobre
+  method color() = rojo
+  method tieneObjeto() = tieneObjeto
+  method tieneObjeto(unObjeto){
+    tieneObjeto = unObjeto
+  }
+  method peso(){
+    return 400 + tieneObjeto.peso()
+  }
+
 }
